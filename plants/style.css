@@ -1,6 +1,6 @@
 html, body {
     background: #EDF2EC;
-    font-family: 'Inter';
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -22,12 +22,19 @@ html, body {
     list-style: none;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
 .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     align-items: center;
     list-style: none;
+    margin-left: 578px;
+    margin-right: 109px;
+    font-family: 'lnika';
+    font-style: normal;
 }
 
 .nav-list {
@@ -37,9 +44,29 @@ html, body {
     list-style: none;
 }
 
+.plants {
+    display: flex;
+    align-items: center;
+    font-family: 'Inika';
+}
+
 .nav-item {
+    margin-right: 35px;
+    margin-left: 7px;
+    display: list-item;
+}
+
+.nav-link {
+    text-decoration: none;
+    color:#010201;
+}
+
+.nav-link1 {
+    text-decoration: none;
+    color:#E06733;
 
 }
+
 .welcome {
     display: flex;
     justify-content: space-between;
@@ -89,13 +116,78 @@ html, body {
     background-color: inherit;
 }
 
-.content {
+.button {
+    display:block;
+    padding: 14px 27px;
+    margin-top: 48px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+.service_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.service_and {
+    padding: 0px;
+}
+
+.services_button {
+    flex-direction: row;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 62px 109px;
+}
+
+.houseplant {
+    width: 30%;
+}
+
+.service {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex-wrap: wrap;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.service_item {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    list-style: none;
+    font-family: 'Inter';
     background: white;
 
 }
+.footer-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 109px;
+}
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-right: 109px;
+}
+
 
 
