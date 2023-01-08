@@ -123,6 +123,7 @@ html, body {
     border: 2px solid #E06733;
     border-radius: 10px;
     background-color: inherit;
+    color:#E06733;
 }
 
 .service_content {
@@ -132,6 +133,7 @@ html, body {
 
 .service_and {
     padding: 0px;
+    color: #499A18;
 }
 
 .services_button {
@@ -144,8 +146,15 @@ html, body {
     align-items: center;
     background: white;
     padding: 62px 109px;
+    color: #499A18;
+    font-family: 'Inika';
 }
 
+
+.about2 {
+    color:#636060;
+    font-family: 'Inter';
+}
 .houseplant {
     width: 30%;
 }
