@@ -1,3 +1,15 @@
+@font-face {
+    font-family:'Inika-Regular';
+    src: url(./fonts/Inika-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Inter-Regular';
+    src: url(./fonts/Inter-Regular.ttf);
+    font-style: normal;
+}
+
 html, body {
     background: #EDF2EC;
     scroll-behavior: smooth;
@@ -10,7 +22,7 @@ html, body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    font-family: 'Inika';
+    font-family:'Inika-Regular';
     color: #010201;
 }
 
@@ -33,8 +45,6 @@ html, body {
     list-style: none;
     margin-left: 578px;
     margin-right: 109px;
-    font-family: 'lnika';
-    font-style: normal;
 }
 
 .nav-list {
@@ -47,7 +57,6 @@ html, body {
 .plants {
     display: flex;
     align-items: center;
-    font-family: 'Inika';
 }
 
 .nav-item {
@@ -72,7 +81,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 62px 109px;
-    font-family: 'Inter';
 }
 
 .welcome .leafs {
@@ -85,6 +93,7 @@ html, body {
     justify-content: space-between;
     align-items: flex-start;
     width: 45%;
+    font-family:'Inter-Regular';
 }
 
 #text1 {
@@ -92,19 +101,21 @@ html, body {
     font-weight: 700;
     line-height: 50px;
     color: #717171;
+    font-family:'Inter-Regular';
 }
 
-#text1 .plants {
+.green {
     color: #499A18;
 }
 
 #text2 {
-    margin-top: 48px;
+    margin-top: 40px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #636060;
+    font-family:'Inter-Regular';
 }
 
 .start {
@@ -118,26 +129,34 @@ html, body {
 
 .button {
     display:block;
-    padding: 14px 27px;
-    margin-top: 48px;
+    padding: 10px 27px;
+    margin-top: 60px;
     border: 2px solid #E06733;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: inherit;
-    color:#E06733;
+    color: #E06733;
+    margin-left: 30px;
 }
 
 .service_content {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.service_and {
-    padding: 0px;
-    color: #499A18;
+.services_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 60px;
+    font-family:'Inika-Regular';
 }
 
-.services_button {
-    flex-direction: row;
+.about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
 }
 
 .about {
@@ -147,14 +166,24 @@ html, body {
     background: white;
     padding: 62px 109px;
     color: #499A18;
-    font-family: 'Inika';
+    font-family:'Inika-Regular';
 }
 
+.abous_text {
+    font-weight: 400;
+    font-size: 40px;
+}
 
 .about2 {
+    font-size: 20px;
     color:#636060;
-    font-family: 'Inter';
+    font-family:'Inter-Regular';
 }
+
+.red {
+    color:#E06733;
+}
+
 .houseplant {
     width: 30%;
 }
@@ -163,18 +192,42 @@ html, body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 62px 109px;
+}
+
+.service_and {
+    padding: 0px;
+    font-weight: 400;
+    line-height: 52px;
+    font-family:'Inika-Regular';
+    font-size: 40px;
+    color: #499A18;
 }
 
 .services {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .service_item {
     display: flex;
     flex-direction: column;
 }
+
+.Prices {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 62px 109px;
+    background: white;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 62px 109px;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -182,14 +235,65 @@ html, body {
     list-style: none;
     font-family: 'Inter';
     background: white;
-
+    font-size: 20px;
+    font-family:'Inter-Regular';
 }
+
+.contact_us {
+    padding: 0px;
+    font-weight: 700;
+    font-family:'Inika-Regular';
+    font-size: 30px;
+    color: #499A18;
+}
+
+.button2 {
+    display:block;
+    padding: 10px 27px;
+    margin-top: 150px;
+    border: 2px solid #E06733;
+    border-radius: 8px;
+    background-color: inherit;
+    color: #E06733;
+    margin-left: 30px;
+}
+
+.text_call_us {
+    display: flex;
+}
+
 .footer-data {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 109px;
 }
+
+.rsschool {
+    color:#010201;
+    text-decoration: none;
+}
+
+a {
+    padding: 1px;
+}
+
+.inst_1 {
+    padding: 10px;
+}
+
+.fb_1 {
+    padding: 10px;
+}
+
+.tw_1 {
+    padding: 10px;
+}
+
+.pinterest_1 {
+    padding: 10px;
+}
+
 .social-list {
     display: flex;
     justify-content: space-between;
