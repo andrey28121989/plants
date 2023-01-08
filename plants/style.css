@@ -1,3 +1,101 @@
-.header {
-    
+html, body {
+    background: #EDF2EC;
+    font-family: 'Inter';
 }
+
+.header {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    font-family: 'Inika';
+    color: #010201;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 109px;
+    list-style: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+
+}
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px 109px;
+    font-family: 'Inter';
+}
+
+.welcome .leafs {
+    width: 37%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 45%;
+}
+
+#text1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #717171;
+}
+
+#text1 .plants {
+    color: #499A18;
+}
+
+#text2 {
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+}
+
+.start {
+    display:block;
+    padding: 14px 27px;
+    margin-top: 48px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background: white;
+
+}
+
+
