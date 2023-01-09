@@ -59,9 +59,10 @@ html, body {
 }
 
 .nav-item {
-    margin-right: 33px;
+    margin-right: 46px;
     margin-left: 7px;
     display: list-item;
+    white-space: nowrap;
 }
 
 .nav-link {
@@ -272,8 +273,11 @@ html, body {
 .service_text1 {
     text-align: center;
 }
+.prices_wrapper 
+    max-width: 1220px;
+    margin: 0 auto;
 
-.Prices {
+.prices_text {
     display: flex;
     flex-wrap: wrap;
     padding: 62px 109px;
