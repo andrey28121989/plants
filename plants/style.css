@@ -17,7 +17,6 @@ html, body {
 
 .header {
     display: flex;
-    position: fixed;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
@@ -230,13 +229,12 @@ html, body {
 
 .content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    font-family: 'Inter';
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 130px;
     background: white;
-    font-size: 20px;
-    font-family:'Inter-Regular';
 }
 
 .contact_us {
@@ -266,11 +264,30 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 109px;
+    column-gap: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
 }
-
+.github-link {
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
 .rsschool {
-    color:#010201;
+    font-family: 'Inter-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -278,28 +295,11 @@ a {
     padding: 1px;
 }
 
-.inst_1 {
-    padding: 10px;
-}
-
-.fb_1 {
-    padding: 10px;
-}
-
-.tw_1 {
-    padding: 10px;
-}
-
-.pinterest_1 {
-    padding: 10px;
-}
-
 .social-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    column-gap: 28px;
     list-style: none;
-    margin-right: 109px;
 }
 
 
