@@ -29,13 +29,14 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 42px 109px;
+    padding: 42px 109px 25px;
     list-style: none;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    padding-left: 10px;
 }
 .navigation {
     display: flex;
@@ -134,7 +135,6 @@ html, body {
     border-radius: 8px;
     background-color: inherit;
     color: #E06733;
-    margin-left: 30px;
 }
 
 .service_content {
@@ -205,8 +205,8 @@ html, body {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .service_item {
@@ -235,6 +235,7 @@ html, body {
     max-width: 1440px;
     height: 130px;
     background: white;
+    padding: 0px 10px;
 }
 
 .contact_us {
