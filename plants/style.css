@@ -8,6 +8,7 @@
     font-family:'Inter-Regular';
     src: url(./fonts/Inter-Regular.ttf);
     font-style: normal;
+
 }
 
 html, body {
@@ -70,11 +71,6 @@ html, body {
     color:#010201;
 }
 
-.nav-link1 {
-    text-decoration: none;
-    color:#E06733;
-}
-
 .welcome {
     display: flex;
     justify-content: space-between;
@@ -111,7 +107,7 @@ html, body {
 
 #text2 {
     margin-top: 40px;
-    font-style: normal;
+    
     font-weight: 400;
     font-size: 20px;
     line-height: 35px;
@@ -126,6 +122,14 @@ html, body {
     border: 2px solid #E06733;
     border-radius: 10px;
     background-color: inherit;
+    font-family:'Inter-Regular';
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button_start:hover {
+    background: #E06733;
+    color: white;
 }
 
 .button {
@@ -137,11 +141,40 @@ html, body {
     padding-left: 40px;
     padding-right: 43px;
     border: 1px solid #E06733;
-    border-radius: 6px;
+    border-radius: 5px;
     background-color: inherit;
     font-weight: 400;
     font-size: 20px;
     color: #E06733;
+    font-family:'Inika-Regular';
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button:hover {
+    background: #E06733;
+    color: white;
+}
+
+
+.button2 {
+    display:block;
+    padding: 10px 27px;
+    border: 2px solid #E06733;
+    border-radius: 5px;
+    background-color: inherit;
+    color: #E06733;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inika-Regular';
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button2:hover {
+    background: #E06733;
+    color: white;
 }
 
 .service_content {
@@ -183,15 +216,15 @@ html, body {
     padding-right: 109px;
     padding-bottom: 93px;
     background: white;
-    padding: 62px 109px;
     color: #499A18;
     font-family:'Inika-Regular';
 }
 
 #about_text {
-    font-size: 40px;
+    font-style: normal;
     font-weight: 400;
-    
+    font-size: 40px;
+    line-height: 52px;
 }
 
 .about2 {
@@ -395,19 +428,6 @@ html, body {
     padding: 0px 10px;
 }
 
-.button2 {
-    display:block;
-    padding: 10px 27px;
-    border: 2px solid #E06733;
-    border-radius: 8px;
-    background-color: inherit;
-    color: #E06733;
-    margin-left: 30px;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Inika-Regular';
-}
-
 .text_call_us {
     width: 452px;
     height: 192px;
@@ -508,8 +528,8 @@ a {
     color: black; ;  
 } 
 
-   a:hover {
-    color: green;
+a:hover {
+    color: #E06733;
 }
 
 .rsschool {
