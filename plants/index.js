@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const navigation = document.querySelector('.navigation');
 
 
-console.log({burger})
-console.log({navigation})
     burger.addEventListener('click', ()=> {
-    navigation.classList.toggle('active')
-    burger.classList.toggle('opened')
+        navigation.classList.toggle('active')
+        burger.classList.toggle('opened')
+        console.log({burger})
+        console.log({navigation})
     })  
 })
 
