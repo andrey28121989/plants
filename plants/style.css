@@ -13,7 +13,7 @@
 html, body {
     background: #EDF2EC;
     scroll-behavior: smooth;
-    margin:0;
+    margin: 0;
 
 }
 
@@ -21,6 +21,7 @@ html, body {
     max-width: 1440px;
     margin: auto;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -122,7 +123,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 24px 25px;
-    /* padding: 62px 109px; */
     margin: 0 auto;
 }
 
@@ -169,7 +169,6 @@ html, body {
     font-size: 10px;
     line-height: 20px;
     font-weight: 400;
-    /* padding: 14px 27px; */
     padding: 8px 18px;
     margin-top: 4px;
     border: 2px solid #E06733;
@@ -212,12 +211,13 @@ html, body {
 
 .button2 {
     display:block;
-    padding: 10px 27px;
-    border: 2px solid #E06733;
+    padding: 8px 22px;
+    border: 1px solid #E06733;
     border-radius: 5px;
     background-color: inherit;
     color: #E06733;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 20px;
     font-weight: 700;
     font-family: 'Inika-Regular';
     cursor: pointer;
@@ -227,6 +227,64 @@ html, body {
 .button2:hover {
     background: #E06733;
     color: white;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+    /* padding: 93px 109px; */
+    padding: 30px 25px;
+    background: white;
+    color: #499A18;
+    font-family:'Inika-Regular';
+}
+
+.about_us {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /* width: 45%; */
+}
+
+#about_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    margin: 0;
+}
+
+.about2 {
+    margin-bottom: 100px;
+    font-size: 15px;
+    line-height: 25px;
+    color:#636060;
+    font-family:'Inter-Regular';
+}
+
+.red {
+    color:#E06733;
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.houseplant {
+    /* display: none; */
+    width: 100%;
+    width: 460px;
+    height: 470px;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 62px 109px;
 }
 
 .service_content {
@@ -248,62 +306,6 @@ html, body {
     margin-top: 15px;
     width: 559px;
     height: 50px;
-}
-
-.about_us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 45%;
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 93px;
-    padding-left: 109px;
-    padding-right: 109px;
-    padding-bottom: 93px;
-    background: white;
-    color: #499A18;
-    font-family:'Inika-Regular';
-}
-
-#about_text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-}
-
-.about2 {
-    margin-bottom: 100px;
-    font-size: 20px;
-    color:#636060;
-    font-family:'Inter-Regular';
-}
-
-.red {
-    color:#E06733;
-    font-size: 40px;
-    font-weight: 400;
-}
-
-.houseplant {
-    width: 30%;
-    width: 460px;
-    height: 470px;
-}
-
-.service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1440px;
-    padding: 62px 109px;
 }
 
 .service_and {
@@ -332,8 +334,8 @@ html, body {
     border: 1px solid #E3E1D5;
     border-radius: 20px 20px 20px 20px;
     width: 330px;
-
 }
+
 .service_text {
     display: flex;
     flex-direction: column;
@@ -346,6 +348,7 @@ html, body {
     margin-top: 5px;
     color: #E06733;
 }
+
 .lorem {
     font-weight: 400;
     font-size: 16px;
@@ -355,6 +358,7 @@ html, body {
     margin-bottom: 20px;
     font-family:'Inter-Regular';
 }
+
 .service_text1 {
     text-align: center;
 }
@@ -405,7 +409,8 @@ html, body {
 .price_link_text {
     width: 100px;
     font-weight: 700;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 15px;
     line-height: 20px;
     color: #000000;
     font-family:'Inter-Regular'
@@ -448,6 +453,7 @@ html, body {
 .contact__img {
     display: none;
 }
+
 .green {
     color: green;
 }
@@ -615,6 +621,7 @@ a:hover {
     }
 
     .leafs {
+        display: flex;
         max-width: 100%;
     }
 
@@ -641,7 +648,38 @@ a:hover {
         margin-top: 48px;
         font-size: 16px;
         line-height: 20px;
+        padding: 14px 27px;
     }
+
+    .about {
+        flex-direction: row;
+        padding: 93px 109px;
+    }
+
+    .about_us {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 45%;
+    }
+
+    #about_text {
+        font-size: 40px;
+        line-height: 52px;
+        text-align: left;
+    }
+
+    .red {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .about2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
     .price-link {
         padding: 34px 41px;
     }
@@ -651,7 +689,7 @@ a:hover {
     }
 
     .prices_wrapper {
-        flex-direction: row   ;
+        flex-direction: row;
     }
 
     .prices {
@@ -667,12 +705,22 @@ a:hover {
         font-size: 40px;
         line-height: 50px;
         text-align: right;
+        margin-bottom: 38px;
     }
     .text_call_us {
         align-items: flex-end;
     }
+
+    .contact__img {
+        display: flex;
+    }
+
     .button2 {
-        margin-left: 30px; 
+        margin-left: 30px;
+        padding: 10px 27px;
+        border: 2px solid #E06733;
+        font-size: 20px;
+        line-height: 26px;
     }
 }
 
