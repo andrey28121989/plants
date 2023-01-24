@@ -477,16 +477,6 @@ html, body {
     color: green;
 }
 
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    height: 130px;
-    background: white;
-    padding: 0px 10px;
-}
-
 .text_call_us {
     display: flex;
     flex-direction: column;
@@ -571,16 +561,27 @@ html, body {
     /* margin-right: 113px */
 }
 
-.footer-data {
+.content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    column-gap: 20px;
-    font-family: 'Inter';
+    justify-content: space-between;
+    flex-direction: column;
+    font-family:'Inter-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 50px;
+    /* line-height: 50px; */
+    line-height: 24px;
+    margin: 0 auto;
+    /* height: 130px; */
+    background: white;
+    padding: 0px 10px;
+}
+
+.footer__data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     color: #000000;
 }
 
@@ -604,20 +605,16 @@ a:hover {
 }
 
 .rsschool {
-    font-family: 'Inter-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 50px;
     color: #000000;
     text-decoration: none;
 }
 
 .social-list {
     display: flex;
-    justify-content: space-between;
-    column-gap: 28px;
+    gap: 30px;
+    align-items: center;
     list-style: none;
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -840,7 +837,11 @@ a:hover {
         margin-right: 113px
     }
 
-
+    .content {
+        flex-direction: row;
+        line-height: 50px;
+        height: 130px;
+    }
 
 
 
