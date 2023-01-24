@@ -14,11 +14,9 @@ html, body {
     background: #EDF2EC;
     scroll-behavior: smooth;
     margin: 0;
-
 }
 
 .container-body {
-    max-width: 1440px;
     margin: auto;
 }
 
@@ -36,13 +34,12 @@ html, body {
     align-items: center;
     list-style: none;
     width: 100%;
-    padding: 36px 25px 36px 9px;
+    padding: 39px 25px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    padding-left: 10px;
 }
 
 .logo img {
@@ -212,7 +209,6 @@ html, body {
     color: white;
 }
 
-
 .button2 {
     display:block;
     padding: 8px 22px;
@@ -279,7 +275,7 @@ html, body {
 .image {
     /* display: flex; */
     /* width: 30%; */
-    margin: -100px 115px 50px;
+    margin: -100px 95px 0px;
     width: 150px;
     height: 147px;
     /* width: 460px; */
@@ -332,6 +328,8 @@ html, body {
     font-size: 25px;
     line-height: 32px;
     color: #499A18;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .services {
@@ -340,7 +338,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    row-gap: 55px;
+    row-gap: 34px;
 }
 
 .service_img {
@@ -352,7 +350,8 @@ html, body {
     flex-direction: column;
     border: 1px solid #E3E1D5;
     border-radius: 20px 20px 20px 20px;
-    width: 330px;
+    max-width: 280px;
+    max-height: 450px;
 }
 
 .service_text {
@@ -376,6 +375,7 @@ html, body {
     margin-top: 5px;
     margin-bottom: 20px;
     font-family:'Inter-Regular';
+    margin-bottom: 36px
 }
 
 .service_text1 {
@@ -401,7 +401,8 @@ html, body {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 40px;
     color: #000000;
     font-family:'Inter-Regular';
 }
@@ -514,6 +515,7 @@ html, body {
     width: 100%;
     text-align: center;
     color: #499A18;
+    margin: 0;
     margin-bottom: 80px;
 }
 
@@ -618,6 +620,7 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
+
     .navbar {
         padding: 35px 50px;
     }
@@ -837,11 +840,7 @@ a:hover {
         margin-right: 113px
     }
 
-    .content {
-        flex-direction: row;
-        line-height: 50px;
-        height: 130px;
-    }
+    
 
 
 
@@ -851,6 +850,13 @@ a:hover {
     .navbar {
         padding: 42px 109px 25px;;
     }
+
+    .content {
+        flex-direction: row;
+        line-height: 50px;
+        height: 130px;
+    }
 }
+
 
 
