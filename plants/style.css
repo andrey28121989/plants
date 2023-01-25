@@ -591,7 +591,7 @@ a:hover {
 @media screen and (min-width: 768px) {
 
     .navbar {
-        padding: 35px 50px 35px 43px;
+        padding: 35px 1.56px 35px 43px;
     }
 
     .burger {
@@ -610,6 +610,10 @@ a:hover {
         flex-direction: row;
         padding: 0;
         padding-left: 150px;
+    }
+
+    .nav-item {
+        margin-left: 0px;
     }
 
     .leafs {
@@ -784,6 +788,12 @@ a:hover {
 
     .button2 {
         margin-bottom: 34px;
+    }
+
+    .contact__img {
+        display: flex;
+        width: 152px;
+        height: 174px;
     }
 
     .contacts {
