@@ -311,6 +311,8 @@ html, body {
 
 .service_img {
     border-radius: 20px 20px 0px 0px;
+    width: 280px;
+    height: 350px;
 }
 
 .service_item {
@@ -342,7 +344,9 @@ html, body {
     color: #717171;
     margin-top: 5px;
     font-family:'Inter-Regular';
-    margin-bottom: 36px
+    margin-left: 40px;
+    width: 202px;
+    margin-bottom: 18px;
 }
 
 .service_text1 {
