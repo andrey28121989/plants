@@ -360,6 +360,7 @@ html, body {
     background: white;
     padding: 25px 79px 40px;
 }
+
 .prices_wrapper {
     display: flex;
     flex-direction: column;
@@ -587,7 +588,104 @@ html, body {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
+.contacts_city__active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #C1E698;
+    border: 1px solid #D6E7D2;
+    padding: 5px 30px 0 20px;
+    height: 50px;
+    width: 450px;
+}
+
+.contacts_city__block {
+    width: 450px;
+    height: 234px;
+    background: #DCE9D9;
+    padding: 26px 26px 30px 26px;
+}
+
+.contacts_city__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts_city__cities {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #499A18;
+    font-family:'Inter-Regular';
+    height: 35px;
+    width: 440px;
+    letter-spacing: 0.05em;
+    border-bottom: 0.5px solid #D9D9D9;
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.contacts_city__phone {
+    display: flex;
+    flex-direction: column;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    height: 214px;
+    width: 390px;
+    padding: 17px 76px 32px 33px;
+}
+
+.contacts_city__phone__text {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    font-family:'Inter-Regular';
+    letter-spacing: 0.05em;
+}
+
+.left {
+    width: 127.49px;
+    height: 35px;
+    color: #000000;
+    margin: 0;
+}
+
+.right {
+    width: 204px;
+    height: 40px;
+    color: #717171;
+    margin: 0;
+}
+
+.call__us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 122px;
+    height: 26px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    text-align: center;
+
+    color: #717171;
+    text-decoration: none;
+    margin-left: 125px;
+    margin-top: 26px;
+    font-family:'Inika-Regular';
+}
+
 .accord_btn1 {
+    display: flex;
     width: 16px;
     height: 16px;
     display: flex;
@@ -900,7 +998,7 @@ a:hover {
     }
 
     .contacts_city {
-        margin-bottom: 250px;
+        /* margin-bottom: 250px; */
     }
 
     .city_text {
