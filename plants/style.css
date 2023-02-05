@@ -196,7 +196,7 @@ html, body {
     transition: all .3s;
 }
 
-.button:hover {
+.button:hover, .button_active {
     background: #E06733;
     color: white;
 }
@@ -309,6 +309,11 @@ html, body {
     row-gap: 34px;
 }
 
+.blur {
+    filter: blur(4px);
+    transition: all .4s;
+}
+
 .service_img {
     border-radius: 20px 20px 0px 0px;
     width: 280px;
@@ -322,6 +327,7 @@ html, body {
     border-radius: 20px 20px 20px 20px;
     max-width: 280px;
     max-height: 450px;
+    transition: all .4s;
 }
 
 .service_text {
@@ -397,7 +403,7 @@ html, body {
     align-items: center;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
-    height: 214px;
+    gap: 32px;
     padding: 29px 22px;
 }
 
@@ -419,6 +425,7 @@ html, body {
     height: 50px;
     background: #EDF2EC;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .price-basic__active {
@@ -509,6 +516,7 @@ html, body {
     margin-left: 20px;
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .accord {
@@ -520,6 +528,7 @@ html, body {
     border: none;
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .call_us_block {
@@ -1277,4 +1286,8 @@ a:hover {
         height: 500px;
         margin-right: 113px
     }
+}
+
+.hidden {
+   display: none;
 }

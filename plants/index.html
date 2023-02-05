@@ -7,7 +7,6 @@
     <title>plants</title>
     <link rel="icon" type="img/icon" href="assets/icons/plants.svg">
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js"></script>
 </head>
 <body>
   <div class="container-body">
@@ -59,48 +58,48 @@
                 <h2 class="service_and">Service and our <br>
                     projects</h2>
                 <div class="services_buttons">
-                    <button class="button">Gardens</button>
-                    <button class="button">Lawn</button>
-                    <button class="button">Planting</button>
+                    <button class="button" id="service_button-gardens">Gardens</button>
+                    <button class="button" id="service_button-lawn">Lawn</button>
+                    <button class="button" id="service_button-planting">Planting</button>
                 </div>
             </div>
             <div class="services">
-                <div class="service_item">
+                <div class="service_item garden">
                     <img src="assets/img/first1.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Garden care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first2.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item lawn">
                     <img src="assets/img/first3.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Lawn care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first4.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item garden">
                     <img src="assets/img/first5.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Garden care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first6.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
@@ -115,18 +114,20 @@
                     <div class="price-block">
                         <h2 class="price-text">Prices</h2>
                         <div class="price-link">
-                                <div class="price-basic">
+                                <div class="price-basic" id="price_basic">
                                     <p class="price_link_text">Basics</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="basic_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="price-basic__active">
+                                <div class="price-basic__active hidden" id="basic_expanded">
                                     <div class="price-basic__header">
                                         <p class="text__header">Basics</p>
-                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        <button class="accord" id="close_basic_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
                                     </div>
                                     <div class="basic__line">  
                                     </div>
@@ -134,18 +135,20 @@
                                     <p class="prices__block"><span class="dollars">$<span class="price__big">15</span></span> / per hour</p>
                                     <a href="#contacts" class="button__order">Order</a>
                                 </div>
-                                <div class="price-basic">
+                                <div class="price-basic" id="price_standart">
                                     <p class="price_link_text">Standard</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="standart_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="price-basic__active">
+                                <div class="price-basic__active hidden" id="standart_expanded">
                                     <div class="price-basic__header">
                                         <p class="text__header">Standart</p>
-                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        <button class="accord" id="close_standart_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
                                     </div>
                                     <div class="basic__line">  
                                     </div>
@@ -153,18 +156,20 @@
                                     <p class="prices__block"><span class="dollars">$<span class="price__big">25</span></span> / per hour</p>
                                     <a href="#contacts" class="button__order">Order</a>
                                 </div>
-                                <div class="price-basic">
+                                <div class="price-basic" id="price_pro_care">
                                     <p class="price_link_text">Pro care</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="pro_care_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="price-basic__active">
+                                <div class="price-basic__active hidden" id="pro_care_expanded">
                                     <div class="price-basic__header">
                                         <p class="text__header">Pro care</p>
-                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        <button class="accord" id="close_pro_care_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
                                     </div>
                                     <div class="basic__line">  
                                     </div>
@@ -261,5 +266,6 @@
         </div>
     </footer>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
