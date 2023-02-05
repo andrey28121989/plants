@@ -18,7 +18,12 @@
                     <img src="assets/img/vector.svg" alt="logo" width="25" height="25">
                 <a class="plants">Plants</a>
                 </div>
-            </div>
+            </div><butto class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </butto>
             <nav class="navigation">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#welcome" class="nav-link">Home</a></li>
@@ -35,7 +40,7 @@
             <div class="leafs">
                 <img src="assets/img/leafs.svg" alt="leafs">
             </div>
-            <div class="welcome text">
+            <div class="welcome__text">
                 <h1 id="text1">We grow <span class="green">plants</span> and give you oxygen</h1>
                 <p id="text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <button class="button_start">LEARN MORE</button>
@@ -47,18 +52,16 @@
                     experienced </span>gardeners</h2>
                 <p class="about2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             </div>
-            <div class="houseplant">
-                <img src="assets/img/houseplant1.jpg" alt="houseplant">
-            </div>
+            <img class="image" src="assets/img/houseplant1.jpg" alt="houseplant">
         </section>
         <section class="service" id="service">
             <div class="service_content">
                 <h2 class="service_and">Service and our <br>
                     projects</h2>
                 <div class="services_buttons">
-                    <button class="button">Planting</button>
-                    <button class="button">Lawn</button>
                     <button class="button">Gardens</button>
+                    <button class="button">Lawn</button>
+                    <button class="button">Planting</button>
                 </div>
             </div>
             <div class="services">
@@ -108,74 +111,130 @@
         </section>
         <section class="prices" id="prices">
             <div class="prices_wrapper">
-                <div class="prices_text">
-                    <div class="price-item">
-                        <div class="price-block">
-                            <h2 class="price-text">Prices</h2>
-                            <div class="price-link">
-                                <div class="Price-link">
-                                    <div class="price-basic">
-                                        <p class="price_link_text">Basics</p>
-                                        <div class="accord_btn">
-                                            <button class="accord">
-                                                <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="price-basic">
-                                        <p class="price_link_text">Standard</p>
-                                        <div class="accord_btn">
-                                            <button class="accord">
-                                                <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="price-basic">
-                                        <p class="price_link_text">Pro care</p>
-                                        <div class="accord_btn">
-                                            <button class="accord">
-                                                <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
-                                            </button>
-                                        </div>
+                <div class="price-item">
+                    <div class="price-block">
+                        <h2 class="price-text">Prices</h2>
+                        <div class="price-link">
+                                <div class="price-basic">
+                                    <p class="price_link_text">Basics</p>
+                                    <div class="accord_btn">
+                                        <button class="accord">
+                                            <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="price-basic__active">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Basics</p>
+                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">15</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
+                                </div>
+                                <div class="price-basic">
+                                    <p class="price_link_text">Standard</p>
+                                    <div class="accord_btn">
+                                        <button class="accord">
+                                            <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="price-basic__active">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Standart</p>
+                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">25</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
+                                </div>
+                                <div class="price-basic">
+                                    <p class="price_link_text">Pro care</p>
+                                    <div class="accord_btn">
+                                        <button class="accord">
+                                            <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="price-basic__active">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Pro care</p>
+                                        <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">35</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
+                                </div>
                         </div>
                     </div>
-                    <div class="call_us_block">
-                        <div class="text_call_us">
-                            <h2 class="our_best">Our best <span class="green">gardeners</span> are ready to help you</h2>
-                            <button class="button2">Contact us</button>
-                        </div>
-                        <div class="contact">
-                            <img src="assets/img/contact.svg" alt="contact">
-                        </div>
+                </div>
+                <div class="call_us_block">
+                    <div class="text_call_us">
+                        <h2 class="our_best">Our best <span class="green">gardeners</span> are ready to help you</h2>
+                        <button class="button2">Contact us</button>
+                    </div>
+                    <div class="contact__img">
+                        <img src="assets/img/contact.svg" alt="contact">
                     </div>
                 </div>
             </div>
         </section>
         <section class="contacts" id="contacts">
-            <div class="contacts_block">
-                <div class="contacts_container">
-                    <div class="contact_img">
-                        <img src="assets/img/contact_woman1.svg" alt="woman">
-                    </div>
-                    <h2 class="contact_us">Contact us</h2>
-                    <div class="contacts_city">
-                        <p class="city_text">City</p>
-                        <div class="accord_btn1">
-                            <button class="accord1">
-                                <img src="assets/img/arrow.png" class="accordion_btn1" alt="accordion1">
-                            </button>
-                        </div>
+            <div class="contacts_content">
+                <h2 class="contact_us">Contact us</h2>
+                <div class="contacts_city">
+                    <p class="city_text">City</p>
+                    <div class="accord_btn1">
+                        <button class="accord1">
+                            <img src="assets/img/arrow.png" class="accordion_btn1" alt="accordion1">
+                        </button>
                     </div>
                 </div>
+                <div class="contacts_city__active">
+                    <p class="city_text">City</p>
+                    <div class="accord_btn1">
+                        <button class="accord1">
+                            <img src="assets/img/drop_btn.png" class="accordion_btn1" alt="accordion1">
+                        </button>
+                    </div>
+                </div>
+                <div class="contacts_city__block">
+                    <ul class="contacts_city__list">
+                        <li class="contacts_city__cities">Canandaigua, NY</li>
+                        <li class="contacts_city__cities">New York City</li>
+                        <li class="contacts_city__cities">Yonkers, NY</li>
+                        <li class="contacts_city__cities">Sherrill, NY</li>
+                    </ul>
+                </div>
+                <div class="contacts_city__phone">
+                    <div class="contacts_city__phone__text">
+                        <p class="left">City:</p>
+                        <p class="right">Canandaigua, NY</p>
+                    </div>
+                    <div class="contacts_city__phone__text">
+                        <p class="left">Phone:</p>
+                        <p class="right">+1	585	393 0001</p>
+                    </div>
+                    <div class="contacts_city__phone__text">
+                        <p class="left">Office adress:</p>
+                        <p class="right">151 Charlotte Street</p>
+                    </div>
+                    <a class="call__us" href="tel:+1 585 393 0001">Call us</a>
+                </div>
             </div>
+            <img class="woman_img" src="assets/img/contact_woman1.svg" alt="woman">
         </section>
     </main>
     <footer>
         <div class="content">
-            <div class="footer-data">
+            <div class="footer__data">
                 <p>©</p>
                 <p>2022</p>
                 <a href="https://github.com/andrey28121989" class="github-link">github</a>
