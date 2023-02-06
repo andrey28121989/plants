@@ -194,44 +194,131 @@
         <section class="contacts" id="contacts">
             <div class="contacts_content">
                 <h2 class="contact_us">Contact us</h2>
-                <div class="contacts_city">
+                <div class="contacts_city" id="contacts_city">
                     <p class="city_text">City</p>
                     <div class="accord_btn1">
-                        <button class="accord1">
+                        <button class="accord1" id="city_button">
                             <img src="assets/img/arrow.png" class="accordion_btn1" alt="accordion1">
                         </button>
                     </div>
                 </div>
-                <div class="contacts_city__active">
-                    <p class="city_text">City</p>
-                    <div class="accord_btn1">
-                        <button class="accord1">
-                            <img src="assets/img/drop_btn.png" class="accordion_btn1" alt="accordion1">
-                        </button>
+                <div class="contacts_city__active hidden" id="contacts_city_expanded">
+                    <div class="contacts_city_active_header">
+                        <p class="city_text">City</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__block" id="contacts_city_block">
+                        <ul class="contacts_city__list">
+                            <li class="contacts_city__cities" id="canandaigua_button">Canandaigua, NY</li>
+                            <li class="contacts_city__cities" id="newyork_button">New York City</li>
+                            <li class="contacts_city__cities" id="yonkers_button">Yonkers, NY</li>
+                            <li class="contacts_city__cities" id="sherrill_button">Sherrill, NY</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="contacts_city__block">
-                    <ul class="contacts_city__list">
-                        <li class="contacts_city__cities">Canandaigua, NY</li>
-                        <li class="contacts_city__cities">New York City</li>
-                        <li class="contacts_city__cities">Yonkers, NY</li>
-                        <li class="contacts_city__cities">Sherrill, NY</li>
-                    </ul>
+                <div class="contacts_city_block_active hidden" id="canandaigua_city_block_active">
+                    <div class="contacts_city_active_header" id="canandaigua_city_active_header">
+                        <p class="city_text">Canandaigua, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="canandaigua_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone " id="canandaigua_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Canandaigua, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	585	393 0001</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">151 Charlotte Street</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 585 393 0001">Call us</a>
+                    </div>
                 </div>
-                <div class="contacts_city__phone">
-                    <div class="contacts_city__phone__text">
-                        <p class="left">City:</p>
-                        <p class="right">Canandaigua, NY</p>
+                <div class="contacts_city_block_active hidden" id="newyork_city_block_active">
+                    <div class="contacts_city_active_header" id="newyork_city_active_header">
+                        <p class="city_text">New York City</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="newyork_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
                     </div>
-                    <div class="contacts_city__phone__text">
-                        <p class="left">Phone:</p>
-                        <p class="right">+1	585	393 0001</p>
+                    <div class="contacts_city__phone" id="newyork_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">New York City</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	212	456 0002</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">9 East 91st Street</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 212 456 0002">Call us</a>
                     </div>
-                    <div class="contacts_city__phone__text">
-                        <p class="left">Office adress:</p>
-                        <p class="right">151 Charlotte Street</p>
+                </div>
+                <div class="contacts_city_block_active hidden" id="yonkers_city_block_active">
+                    <div class="contacts_city_active_header" id="yonkers_city_active_header">
+                        <p class="city_text">Yonkers, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="yonkers_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
                     </div>
-                    <a class="call__us" href="tel:+1 585 393 0001">Call us</a>
+                    <div class="contacts_city__phone" id="yonkers_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Yonkers, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	914	678 0003</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">511 Warburton Ave</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 914 678 0003">Call us</a>
+                    </div>
+                </div>
+                <div class="contacts_city_block_active hidden" id="sherrill_city_block_active">
+                    <div class="contacts_city_active_header" id="sherrill_city_active_header">
+                        <p class="city_text">Sherrill, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="sherrill_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone" id="sherrill_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Sherrill, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	315	908 0004</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">14 WEST Noyes BLVD</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 315 908 0004">Call us</a>
+                    </div>
                 </div>
             </div>
             <img class="woman_img" src="assets/img/contact_woman1.svg" alt="woman">
