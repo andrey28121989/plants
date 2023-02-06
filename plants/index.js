@@ -1,3 +1,5 @@
+// навигация на мобилке
+
 document.addEventListener('DOMContentLoaded', ()=> {
     const burger = document.querySelector('.burger');
     const navigation = document.querySelector('.navigation');
@@ -8,6 +10,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         burger.classList.toggle('opened');
     })  
 })
+
+// blur при нажатии на кнопок: Gardens,Lawn,Planting 
 
 const gardensButton = document.querySelector('#service_button-gardens');
 const lawnButton = document.querySelector('#service_button-lawn');
@@ -82,6 +86,8 @@ plantingButton.addEventListener('click', (e)=> {
     }
 })
 
+// раздел price, реализация 3-х выпадающих списков
+
 const basicButton = document.querySelector('#basic_button');
 const basicExpanded = document.querySelector('#basic_expanded');
 const priceBasic = document.querySelector('#price_basic');
@@ -132,7 +138,9 @@ proCareButton.addEventListener('click', () => {
         proCareExpanded.classList.toggle('hidden');
         }
         )
-    
+
+// раздел contacts с выбором городов
+
 const cityButton = document.querySelector('#city_button');
 const contactsCityExpanded = document.querySelector('#contacts_city_expanded');
 const contactsCity = document.querySelector('#contacts_city');
