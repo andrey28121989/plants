@@ -102,8 +102,7 @@ async function getWeather() {
     humidity.textContent = `Humidity: ${data.main.humidity}%`;
     weatherError.textContent = '';
   }
-  }
-    
+  } 
 getWeather();
 
 function setCity(event) {
@@ -115,3 +114,27 @@ function setCity(event) {
 
 document.addEventListener('DOMContentLoaded', getWeather);
 city.addEventListener('keypress', setCity);
+
+// Quotes Day
+
+const changeQuote = document.querySelector('.change-quote');
+const quote = document.querySelector('.quote');
+const author = document.querySelector('.author');
+
+async function getQuotes() { 
+  const quotes = 'quotesDay.json';
+  const res = await fetch(quotes);
+  const data = await res.json();
+  const quotesString = Math.round(Math.random() * data.length);
+  quote.textContent = data[quotesString].text;
+  author.textContent = data[quotesString].author;
+  // console.log(data);
+}
+getQuotes();
+
+changeQuote.addEventListener('click', getQuotes)
+window.addEventListener('load', getQuotes);
+
+// Audio player
+
+
