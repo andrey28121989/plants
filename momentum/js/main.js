@@ -73,22 +73,20 @@ const body = document.querySelector('body');
 const slideNext = document.querySelector('.slide-next')
 const slidePrev = document.querySelector('.slide-prev')
 
-// body.style.backgroundImage = `https://raw.githubusercontent.com/andrey28121989/stage1-tasks/tree/assets/images/${timeOfDay}/${bgNum}.webp`;
-
-let randomNum;
 function getRandomNum() {                                                      
-  randomNum = Math.ceil(Math.random() * 20)
+  return Math.ceil(Math.random() * 20);
 }
-getRandomNum();
+
+let randomNum = getRandomNum();
 
 function setBg() {
-  const timeOfDay = greet.timeOfDay;
+  const timeOfDay = getTimeOfDay();
   const bgNum = `${randomNum}`.padStart(2, "0")
   const img = new Image();
-  img.src = `https://raw.githubusercontent.com/andrey28121989/stage1-tasks/tree/assets/images/${timeOfDay}/${bgNum}.webp`;
+  img.src = `https://raw.githubusercontent.com/andrey28121989/stage1-tasks/assets/images/${timeOfDay}/${bgNum}.jpg`;
   img.onload = () => {
     document.body.style.backgroundImage = `url(${img.src})`;
-  };
+  }
 }
 setBg();
 
