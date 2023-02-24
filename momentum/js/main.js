@@ -48,7 +48,7 @@ function showGreeting() {
 }
 showGreeting()
 
-// Name and city
+// name and city
 
 const name = document.querySelector('.name');
 const city = document.querySelector('.city');
@@ -67,11 +67,43 @@ function getLocalStorage() {
 }
 window.addEventListener('load', getLocalStorage)
 
-// Background Image
+// background Image
 
-// body.style.backgroundImage = "url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/18.jpg')";
+const body = document.querySelector('body');
+const slideNext = document.querySelector('.slide-next')
+const slidePrev = document.querySelector('.slide-prev')
 
-// Weather
+function getRandomNum() {                                                      
+  return Math.ceil(Math.random() * 20);
+}
+
+let randomNum = getRandomNum();
+
+function setBg() {
+  const timeOfDay = getTimeOfDay();
+  const bgNum = `${randomNum}`.padStart(2, "0")
+  const img = new Image();
+  img.src = `https://raw.githubusercontent.com/andrey28121989/stage1-tasks/assets/images/${timeOfDay}/${bgNum}.jpg`;
+  img.onload = () => {
+    document.body.style.backgroundImage = `url(${img.src})`;
+  }
+}
+setBg();
+
+const getSlideNext = () => {
+  randomNum = (randomNum === 20) ? 1 : randomNum + 1;
+  setBg()
+}
+
+const getSlidePrev = () => {
+  randomNum = (randomNum === 1) ? 20 : randomNum - 1;
+  setBg()
+}
+
+slidePrev.addEventListener('click', getSlidePrev);
+slideNext.addEventListener('click', getSlideNext);
+
+// weather
 
 const weatherIcon = document.querySelector('.weather-icon');
 const temperature = document.querySelector('.temperature');
@@ -115,18 +147,18 @@ function setCity(event) {
 document.addEventListener('DOMContentLoaded', getWeather);
 city.addEventListener('keypress', setCity);
 
-// Quotes Day
+// quotes Day
 
-const changeQuote = document.querySelector('.change-quote');
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
+const changeQuote = document.querySelector('.change-quote');
 
 async function getQuotes() { 
-  const quotes = 'quotesDay.json';
+  const quotes = 'js/quotesDay.json';
   const res = await fetch(quotes);
   const data = await res.json();
   const quotesString = Math.round(Math.random() * data.length);
-  quote.textContent = data[quotesString].text;
+  quote.textContent = `"${data[quotesString].text}"`;
   author.textContent = data[quotesString].author;
   // console.log(data);
 }
@@ -135,6 +167,6 @@ getQuotes();
 changeQuote.addEventListener('click', getQuotes)
 window.addEventListener('load', getQuotes);
 
-// Audio player
+// audio player
 
 
