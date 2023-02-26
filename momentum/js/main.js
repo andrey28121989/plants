@@ -118,7 +118,6 @@ async function getWeather() {
   const data = await res.json(); 
   
   if (data.cod === '404' || data.cod === '400') {
-    // weatherIcon.classList.add(`owf-${data.weather[0].id}`);
     temperature.textContent = '';
     weatherDescription.textContent = '';
     wind.textContent = '';
@@ -127,7 +126,6 @@ async function getWeather() {
     weatherIcon.className = 'weather-icon owf';
   } else {
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-    // weatherIcon.className = 'weather-icon owf';
     temperature.textContent = `${data.main.temp.toFixed(0)}°C`;
     weatherDescription.textContent = data.weather[0].description;
     wind.textContent = `Wind speed: ${Math.round(data.wind.speed)} m/s`;
@@ -160,7 +158,6 @@ async function getQuotes() {
   const quotesString = Math.round(Math.random() * data.length);
   quote.textContent = `"${data[quotesString].text}"`;
   author.textContent = data[quotesString].author;
-  // console.log(data);
 }
 getQuotes();
 
@@ -168,5 +165,78 @@ changeQuote.addEventListener('click', getQuotes)
 window.addEventListener('load', getQuotes);
 
 // audio player
+
+import playList from './playList.js';
+
+let isPlay = false;
+let playNum = 0;
+
+const playButton = document.querySelector('.play');
+const playPrev = document.querySelector('.play-prev');
+const playNext = document.querySelector('.play-next');
+const playListItem = document.querySelector('.play-list');
+
+playList.forEach(element => {
+  const li = document.createElement('li');
+  li.classList.add('play-item');
+  li.textContent = element.title;
+  playListItem.append(li);
+});
+
+const playItem = document.querySelectorAll('.play-item')
+
+const audio = new Audio();
+let audioTime = 0;
+
+const playAudio = () => {
+  if (!isPlay) {
+    audio.src = playList[playNum].src;
+    audio.currentTime = audioTime;
+    audio.play();
+    isPlay = true;
+    playButton.classList.toggle('pause');
+    playItem[playNum].classList.add('item-active');
+  } else {
+    audio.pause();
+    audioTime = audio.currentTime;
+    isPlay = false;
+    playButton.classList.toggle('pause');
+  }
+};
+
+playButton.addEventListener('click', playAudio);
+
+const audioNext = () => {
+  audioTime = 0;
+  isPlay = false;
+  playButton.classList.remove('pause');
+  playItem[playNum].classList.remove('item-active');
+  if (playNum < 4){
+  playNum++;
+  playAudio();
+} else if (playNum === 4) {
+  playNum = 0;
+  playAudio();
+}
+};
+
+const audioPrev = () => {
+  audioTime = 0;
+  isPlay = false;
+  playButton.classList.remove('pause');
+  playItem[playNum].classList.remove('item-active');
+  if (playNum > 0) {
+    playNum--;
+    playAudio();
+  } else  if (playNum === 0){
+    playNum = 4;
+    playAudio();
+  }
+};
+
+audio.addEventListener('ended', audioNext);
+playPrev.addEventListener('click', audioPrev);
+playNext.addEventListener('click', audioNext);
+
 
 
