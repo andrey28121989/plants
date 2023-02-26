@@ -166,7 +166,7 @@ window.addEventListener('load', getQuotes);
 
 // audio player
 
-import playList from './playList.js';
+import playList from './playlist.js';
 
 let isPlay = false;
 let playNum = 0;
