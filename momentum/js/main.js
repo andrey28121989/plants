@@ -238,5 +238,4 @@ audio.addEventListener('ended', audioNext);
 playPrev.addEventListener('click', audioPrev);
 playNext.addEventListener('click', audioNext);
 
-
-
+console.log ('Ваша оценка - 85 баллов из 150; выполнены пункты 1-6')
