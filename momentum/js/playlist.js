@@ -1,4 +1,4 @@
-const playListOrig = [
+const playList = [
     { 
       title: 'Akvarium - Poezd v ogne',
       src: '../assets/sounds/Akvarium - Poezd v ogne.mp3',
@@ -26,4 +26,4 @@ const playListOrig = [
     }
 ]
 
-    export default playListOrig;
+    export default playList;
