@@ -238,4 +238,5 @@ audio.addEventListener('ended', audioNext);
 playPrev.addEventListener('click', audioPrev);
 playNext.addEventListener('click', audioNext);
 
+console.log ('Для воспроизведения музыки прошу зайти на сайт: https://andrey28121989-momentum.netlify.app/')
 console.log ('Ваша оценка - 85 баллов из 150; выполнены пункты 1-6')
