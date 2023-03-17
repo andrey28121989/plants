@@ -7,7 +7,6 @@
     <title>plants</title>
     <link rel="icon" type="img/icon" href="assets/icons/plants.svg">
     <link rel="stylesheet" href="style.css">
-    <script src="./index.js"></script>
 </head>
 <body>
   <div class="container-body">
@@ -59,48 +58,48 @@
                 <h2 class="service_and">Service and our <br>
                     projects</h2>
                 <div class="services_buttons">
-                    <button class="button">Gardens</button>
-                    <button class="button">Lawn</button>
-                    <button class="button">Planting</button>
+                    <button class="button" id="service_button-gardens">Gardens</button>
+                    <button class="button" id="service_button-lawn">Lawn</button>
+                    <button class="button" id="service_button-planting">Planting</button>
                 </div>
             </div>
             <div class="services">
-                <div class="service_item">
+                <div class="service_item garden">
                     <img src="assets/img/first1.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Garden care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first2.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item lawn">
                     <img src="assets/img/first3.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Lawn care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first4.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item garden">
                     <img src="assets/img/first5.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Garden care</h3>
                         <p class="lorem">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service_item">
+                <div class="service_item planting">
                     <img src="assets/img/first6.jpg" class="service_img" alt="first">
                     <div class="service_text1">
                         <h3 class="service_text">Planting</h3>
@@ -115,29 +114,68 @@
                     <div class="price-block">
                         <h2 class="price-text">Prices</h2>
                         <div class="price-link">
-                                <div class="price-basic">
+                                <div class="price-basic" id="price_basic">
                                     <p class="price_link_text">Basics</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="basic_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="price-basic">
+                                <div class="price-basic__active hidden" id="basic_expanded">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Basics</p>
+                                        <button class="accord" id="close_basic_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">15</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
+                                </div>
+                                <div class="price-basic" id="price_standart">
                                     <p class="price_link_text">Standard</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="standart_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
                                 </div>
-                                <div class="price-basic">
+                                <div class="price-basic__active hidden" id="standart_expanded">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Standart</p>
+                                        <button class="accord" id="close_standart_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">25</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
+                                </div>
+                                <div class="price-basic" id="price_pro_care">
                                     <p class="price_link_text">Pro care</p>
                                     <div class="accord_btn">
-                                        <button class="accord">
+                                        <button class="accord" id="pro_care_button">
                                             <img src="assets/img/accordion_btn.png" class="accordion_btn" alt="accordion">
                                         </button>
                                     </div>
+                                </div>
+                                <div class="price-basic__active hidden" id="pro_care_expanded">
+                                    <div class="price-basic__header">
+                                        <p class="text__header">Pro care</p>
+                                        <button class="accord" id="close_pro_care_button">
+                                            <img src="assets/img/accordion_btn2.png" class="close" alt="accordion_btn2">
+                                        </button>
+                                    </div>
+                                    <div class="basic__line">  
+                                    </div>
+                                    <p class="basic__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__block"><span class="dollars">$<span class="price__big">35</span></span> / per hour</p>
+                                    <a href="#contacts" class="button__order">Order</a>
                                 </div>
                         </div>
                     </div>
@@ -156,12 +194,130 @@
         <section class="contacts" id="contacts">
             <div class="contacts_content">
                 <h2 class="contact_us">Contact us</h2>
-                <div class="contacts_city">
+                <div class="contacts_city" id="contacts_city">
                     <p class="city_text">City</p>
                     <div class="accord_btn1">
-                        <button class="accord1">
+                        <button class="accord1" id="city_button">
                             <img src="assets/img/arrow.png" class="accordion_btn1" alt="accordion1">
                         </button>
+                    </div>
+                </div>
+                <div class="contacts_city__active hidden" id="contacts_city_expanded">
+                    <div class="contacts_city_active_header">
+                        <p class="city_text">City</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__block" id="contacts_city_block">
+                        <ul class="contacts_city__list">
+                            <li class="contacts_city__cities" id="canandaigua_button">Canandaigua, NY</li>
+                            <li class="contacts_city__cities" id="newyork_button">New York City</li>
+                            <li class="contacts_city__cities" id="yonkers_button">Yonkers, NY</li>
+                            <li class="contacts_city__cities" id="sherrill_button">Sherrill, NY</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts_city_block_active hidden" id="canandaigua_city_block_active">
+                    <div class="contacts_city_active_header" id="canandaigua_city_active_header">
+                        <p class="city_text">Canandaigua, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="canandaigua_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone " id="canandaigua_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Canandaigua, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	585	393 0001</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">151 Charlotte Street</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 585 393 0001">Call us</a>
+                    </div>
+                </div>
+                <div class="contacts_city_block_active hidden" id="newyork_city_block_active">
+                    <div class="contacts_city_active_header" id="newyork_city_active_header">
+                        <p class="city_text">New York City</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="newyork_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone" id="newyork_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">New York City</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	212	456 0002</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">9 East 91st Street</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 212 456 0002">Call us</a>
+                    </div>
+                </div>
+                <div class="contacts_city_block_active hidden" id="yonkers_city_block_active">
+                    <div class="contacts_city_active_header" id="yonkers_city_active_header">
+                        <p class="city_text">Yonkers, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="yonkers_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone" id="yonkers_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Yonkers, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	914	678 0003</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">511 Warburton Ave</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 914 678 0003">Call us</a>
+                    </div>
+                </div>
+                <div class="contacts_city_block_active hidden" id="sherrill_city_block_active">
+                    <div class="contacts_city_active_header" id="sherrill_city_active_header">
+                        <p class="city_text">Sherrill, NY</p>
+                        <div class="accord_btn1">
+                            <button class="accord1" id="sherrill_city_close_button">
+                                <img src="assets/img/drop_btn.png" class="drop_btn" alt="accordion1">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="contacts_city__phone" id="sherrill_city">
+                        <div class="contacts_city_phone_text">
+                            <p class="left">City:</p>
+                            <p class="right">Sherrill, NY</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Phone:</p>
+                            <p class="right">+1	315	908 0004</p>
+                        </div>
+                        <div class="contacts_city_phone_text">
+                            <p class="left">Office adress:</p>
+                            <p class="right">14 WEST Noyes BLVD</p>
+                        </div>
+                        <a class="call__us" href="tel:+1 315 908 0004">Call us</a>
                     </div>
                 </div>
             </div>
@@ -197,5 +353,6 @@
         </div>
     </footer>
   </div>
+  <script src="./index.js"></script>
 </body>
 </html>
