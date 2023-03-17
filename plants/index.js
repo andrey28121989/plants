@@ -1,3 +1,5 @@
+// навигация на мобилке
+
 document.addEventListener('DOMContentLoaded', ()=> {
     const burger = document.querySelector('.burger');
     const navigation = document.querySelector('.navigation');
@@ -8,6 +10,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
         burger.classList.toggle('opened');
     })  
 })
+
+// blur при нажатии на кнопок: Gardens,Lawn,Planting 
 
 const gardensButton = document.querySelector('#service_button-gardens');
 const lawnButton = document.querySelector('#service_button-lawn');
@@ -82,6 +86,8 @@ plantingButton.addEventListener('click', (e)=> {
     }
 })
 
+// раздел price, реализация 3-х выпадающих списков
+
 const basicButton = document.querySelector('#basic_button');
 const basicExpanded = document.querySelector('#basic_expanded');
 const priceBasic = document.querySelector('#price_basic');
@@ -132,5 +138,94 @@ proCareButton.addEventListener('click', () => {
         proCareExpanded.classList.toggle('hidden');
         }
         )
-    
-    
+
+// раздел contacts с выбором городов
+
+const cityButton = document.querySelector('#city_button');
+const contactsCityExpanded = document.querySelector('#contacts_city_expanded');
+const contactsCity = document.querySelector('#contacts_city');
+const cityCloseButton = document.querySelector('#city_close_button');
+        
+cityButton.addEventListener('click', () => {
+    contactsCity.classList.toggle('hidden');
+    contactsCityExpanded.classList.toggle('hidden');
+    }
+    )
+        
+    cityCloseButton.addEventListener('click', () => {
+        contactsCity.classList.toggle('hidden');
+        contactsCityExpanded.classList.toggle('hidden');
+        }
+        )
+
+const canandaiguaButton = document.querySelector('#canandaigua_button');
+const canandaiguaCityCloseButton = document.querySelector('#canandaigua_city_close_button');
+const canandaiguaCityBlockActive = document.querySelector('#canandaigua_city_block_active');
+const contactsCityBlock = document.querySelector('#contacts_city_expanded');
+
+
+canandaiguaButton.addEventListener('click', () => {
+    contactsCityBlock.classList.toggle('hidden');
+    canandaiguaCityBlockActive.classList.toggle('hidden');
+    }
+    )
+        
+    canandaiguaCityCloseButton.addEventListener('click', () => {
+        contactsCityBlock.classList.toggle('hidden');
+        canandaiguaCityBlockActive.classList.toggle('hidden');
+        }
+        )
+
+const newyorkButton = document.querySelector('#newyork_button');
+const newyorkCityCloseButton = document.querySelector('#newyork_city_block_active');
+const newyorkCityBlockActive = document.querySelector('#newyork_city_block_active');
+const contactsCityBlock1 = document.querySelector('#contacts_city_expanded');
+
+
+newyorkButton.addEventListener('click', () => {
+    contactsCityBlock1.classList.toggle('hidden');
+    newyorkCityBlockActive.classList.toggle('hidden');
+    }
+    )
+        
+    newyorkCityCloseButton.addEventListener('click', () => {
+        contactsCityBlock1.classList.toggle('hidden');
+        newyorkCityBlockActive.classList.toggle('hidden');
+        }
+        )
+
+const yonkersButton = document.querySelector('#yonkers_button');
+const yonkersCityCloseButton = document.querySelector('#yonkers_city_close_button');
+const yonkersCityBlockActive = document.querySelector('#yonkers_city_block_active');
+const contactsCityBlock2 = document.querySelector('#contacts_city_expanded');
+
+
+yonkersButton.addEventListener('click', () => {
+    contactsCityBlock2.classList.toggle('hidden');
+    yonkersCityBlockActive.classList.toggle('hidden');
+    }
+    )
+        
+    yonkersCityCloseButton.addEventListener('click', () => {
+        contactsCityBlock2.classList.toggle('hidden');
+        yonkersCityBlockActive.classList.toggle('hidden');
+        }
+        )
+
+const sherrillButton = document.querySelector('#sherrill_button');
+const sherrillCityCloseButton = document.querySelector('#sherrill_city_close_button');
+const sherrillCityBlockActive = document.querySelector('#sherrill_city_block_active');
+const contactsCitySherrill = document.querySelector('#contacts_city_expanded');
+
+
+sherrillButton.addEventListener('click', () => {
+    contactsCitySherrill.classList.toggle('hidden');
+    sherrillCityBlockActive.classList.toggle('hidden');
+    }
+    )
+        
+    sherrillCityCloseButton.addEventListener('click', () => {
+        contactsCitySherrill.classList.toggle('hidden');
+        sherrillCityBlockActive.classList.toggle('hidden');
+        }
+        )
